@@ -27,13 +27,13 @@ function ball() {
 
 function mouseReleased() {
   let avstandBall = dist(ballx, bally, mouseX, mouseY);
-  if (avstandBall < ballSize/2) {
+  if (avstandBall < ballSize) {
     fill('green');
     fart = fart + 1;
     bally = random(ballSize/2, (windowHeight-ballSize/2));
     poeng = poeng + 1;
   }
-  if (avstandBall > ballSize/2) {
+  if (avstandBall > ballSize) {
     fill('red');
     poeng = poeng - 1;
   }
